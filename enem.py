@@ -7,4 +7,3 @@ def main():
     name=x+y+z+a+b
     print(f"Nota={name:.2f}")
 main()
-main()
