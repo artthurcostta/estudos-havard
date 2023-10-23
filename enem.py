@@ -5,5 +5,6 @@ def main():
     a=float(input("Matemática e suas Tecnologias"))
     b=float(input("Redação"))
     name=x+y+z+a+b
-    print(f"Nota={name:.2f}")
+    valorfinal=name//2
+    print(f"Nota={valorfinal:.2f}")
 main()
