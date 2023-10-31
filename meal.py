@@ -8,7 +8,7 @@ def main():
     elif time >=18 and time <=19:
         print("dinner time")
     else:
-        print("VAI TOMAR NO CU")
+        print("safado")
 
 def convert(time):
     horas, minutos = time.split(":")
