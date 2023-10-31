@@ -13,8 +13,6 @@ def convert(minutes, hours):
         print("lunch time!")
     elif 18 <= res <= 19:
         print("dinner time!")
-    else:
-        pass
 
 
 if __name__== "__main__":
