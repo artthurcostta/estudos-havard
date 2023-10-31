@@ -1,20 +1,21 @@
 def main():
-    akarasta = input("What time is it")
-    time = convert(akarasta)
-    if time >=7 and time<=8:
-        print("breakfast time")
-    elif time >=12 and time <=13:
-        print("lunch time")
-    elif time >=18 and time <=19:
-        print("dinner time")
+    time = input("What time is it? ")
+    hours, minutes = time.split(":")
+    convert(minutes, hours)
+
+
+def convert(minutes, hours):
+    converted = float((int(minutes) / 60) + int(hours))
+    res = round(converted, 1)
+    if 7 <= res <= 8:
+        print("breakfast time!")
+    elif 12 <= res <= 13:
+        print("lunch time!")
+    elif 18 <= res <= 19:
+        print("dinner time!")
     else:
-        print("safado")
-
-def convert(time):
-    horas, minutos = time.split(":")
-    minutos = float(minutos) / 60
-    return float(horas) + minutos
+        pass
 
 
-if __name__ == "__main__":
+if __name__== "__main__":
     main()
